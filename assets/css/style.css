@@ -1,0 +1,23 @@
+body {
+    margin: 20px;
+}
+
+.jumbotron {
+    background-image: url("../images/jumbo.jpg");
+    background-size: cover;
+    font-family: 'Ewert', cursive;
+}
+
+h1 {
+    font-size: 70px;
+    text-shadow: 3px 3px white;
+}
+p {
+    text-align: center;
+    line-height: 15px;
+    font-style: italic;
+    
+}
+
+
+
