@@ -2,11 +2,8 @@
 $(document).ready(function(){
     startGame()
 
-    // will generate random number to set as a target score between 19-120
-    var targetScore = Math.floor(Math.random()* 102) + 19;
-    console.log(targetScore);
-    // display the number on the screen as soon as game reloads.
-    $(".targetScore").text(targetScore);
+    // variable to hold our future random number
+    var targetScore;
     
     // variables to hold the value of our wins losses and total score
     var yourScore = 0;
@@ -18,15 +15,15 @@ $(document).ready(function(){
     $(".wins").text(wins);
     $(".losses").text(losses);
 
-    // will make 4 crystals have random value every new game between 1-12
-    var red = Math.floor(Math.random() * 12) + 1;
-    var diamond = Math.floor(Math.random() * 12) + 1;
-    var purple = Math.floor(Math.random() * 12) + 1;
-    var yellow = Math.floor(Math.random() * 12) + 1;
+    // will make 4 crystals
+    var red;
+    var diamond;
+    var purple;
+    var yellow;
 
     // starting the game
      function startGame() {
-        // generating random number for our fucntion
+        // generating random number for our fucntion for our crystals
         red = Math.floor(Math.random() * 12) + 1;
         diamond = Math.floor(Math.random() * 12) + 1;
         purple = Math.floor(Math.random() * 12) + 1;
